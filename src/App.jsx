@@ -7,7 +7,7 @@ import { RowSelection } from './components/RowSelection'
 
 function App() {
   return (
-    <RowSelection/>
+    <PaginationTable/>
   )
 }
 
