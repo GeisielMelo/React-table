@@ -3,7 +3,7 @@
 This app illustrates the step-by-step development of a comprehensive advanced table, organized into 5 stages. For user convenience, two buttons ('Prev' and 'Next') are provided for easy navigation between pages.
 ## Preview
 
-![demo](https://cdn.kibrispdr.org/data/906/web-page-under-construction-image-6.png)
+![demo](https://github.com/GeisielMelo/react-table/blob/main/public/preview.png?raw=true)
 
 ## Deploy
 
