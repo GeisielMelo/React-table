@@ -1,8 +1,7 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTable, usePagination } from "react-table";
-import MOCK_DATA from "./MOCK_DATA.json";
-import { COLUMNS } from "./columns";
-import "./table.css";
+import MOCK_DATA from "../config/MOCK_DATA.json";
+import { COLUMNS } from "../utils/columns";
 
 export const PaginationTable = () => {
   const columns = useMemo(() => COLUMNS, []);
@@ -37,6 +36,7 @@ export const PaginationTable = () => {
 
   return (
     <>
+      <h1>Pagination Table</h1>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

@@ -1,8 +1,7 @@
 import React, { useMemo } from "react";
 import { useTable, useGlobalFilter } from "react-table";
-import MOCK_DATA from "./MOCK_DATA.json";
-import { COLUMNS } from "./columns";
-import "./table.css";
+import MOCK_DATA from "../config/MOCK_DATA.json";
+import { COLUMNS } from "../utils/columns";
 import { GlobalFilter } from "./GlobalFilter";
 
 export const FilteringTable = () => {
@@ -31,6 +30,7 @@ export const FilteringTable = () => {
 
   return (
     <>
+      <h1>Filtering Table</h1>
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter}  />
       <table {...getTableProps()}>
         <thead>

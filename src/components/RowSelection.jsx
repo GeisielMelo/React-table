@@ -1,8 +1,8 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { useTable, useRowSelect } from "react-table";
-import MOCK_DATA from "./MOCK_DATA.json";
-import { COLUMNS } from "./columns";
-import "./table.css";
+import MOCK_DATA from "../config/MOCK_DATA.json";
+import { COLUMNS } from "../utils/columns";
+import "../styles/table.css";
 import { Checkbox } from "./Checkbox";
 
 export const RowSelection = () => {

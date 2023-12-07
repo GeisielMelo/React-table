@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import {
   useTable,
   usePagination,
@@ -6,11 +6,10 @@ import {
   useGlobalFilter,
   useSortBy,
 } from "react-table";
-import MOCK_DATA from "./MOCK_DATA.json";
-import { COLUMNS } from "./columns";
 import { Checkbox } from "./Checkbox";
 import { GlobalFilter } from "./GlobalFilter";
-import "./table.css";
+import MOCK_DATA from "../config/MOCK_DATA.json";
+import { COLUMNS } from "../utils/columns";
 
 export const Table = () => {
   const columns = useMemo(() => COLUMNS, []);
@@ -67,6 +66,7 @@ export const Table = () => {
 
   return (
     <>
+      <h1>Complete Table</h1>
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
       <table {...getTableProps()}>
         <thead>

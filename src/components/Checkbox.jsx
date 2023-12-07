@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, forwardRef } from "react";
+import { useEffect, useRef, forwardRef } from "react";
 
 export const Checkbox = forwardRef(({ indeterminate, ...rest }, ref) => {
   const defaultRef = useRef();
